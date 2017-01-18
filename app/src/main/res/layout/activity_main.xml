@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ln.alarmdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TimePicker
+            android:id="@+id/tp_clock"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:timePickerMode="clock"
+            android:background="@color/background">
+
+        </TimePicker>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_set"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/set"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/cancel"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
